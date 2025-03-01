@@ -1,6 +1,14 @@
+# Disclaimer
+This is a work in project, that may or may not be completed.
+
 # Strategy Game Backend
 
 Backend for a strategy game providing similar features to games like Tribal Wars/Travian such as city management and conquest. The backend is built with .NET Core and uses MongoDB for data storage.
+
+## Technologies Used
+- **Framework**: .NET Core
+- **Database**: MongoDB
+- **Authentication**: OAuth 2.0 with IdentityFramework
 
 ## Features
 
@@ -65,27 +73,6 @@ Backend for a strategy game providing similar features to games like Tribal Wars
    ```
 3. The API will be available at `https://localhost:5001`.
 4. Utilize the GameManager Endpoints to customize your game
-
-## Configuration
-
-### `appsettings.json`
-- **ConnectionStrings**: MongoDB connection string.
-- **Jwt**:
-- **WorldSettings**:
-  - `Name`: The default name for the game world.
-  - `DefaultResourcesPerLevel`: The default amount of resources added per level.
-  - `DefaultUnitMovementSpeed`: affects unit movement speed when traveling between cities.
-  - `DefaultUnitTrainingSpeed`: affects training speed for units.
-  - `DefaultConstructionSpeed`: affects construction speed for buildings.
-  - `DefaultResearchSpeed`: affects upgrade research speed for buildings.
-  - `UnitsDisabled`: List of Units disabled on this server.
-  - `BuildingsDisabled`: List of Buildings disabled on this server.
-
-## Technologies Used
-- **Framework**: .NET Core
-- **Database**: MongoDB
-- **Authentication**: JWT, OAuth 2.0
-- **Logging**: Integrated with ASP.NET Core logging.
 
 ## License
 This project is licensed under the MIT License.
