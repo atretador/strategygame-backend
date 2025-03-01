@@ -11,6 +11,8 @@ Backend for a strategy game providing similar features to games like Tribal Wars
 - **Authentication**: OAuth 2.0 with IdentityFramework
 
 ## Features
+Admin can register Buildings, Units, Factions, World settings, Generate new worlds based on those settings.
+Background services handle attacks, unit training, building contrusction, etc.
 
 ### Authentication and Authorization
 - OAuth 2.0 implementation using JWT for secure user authentication.
@@ -19,30 +21,7 @@ Backend for a strategy game providing similar features to games like Tribal Wars
 - Players can choose a direction where to spawn in the world
 
 #### Endpoints
-- `GET /api/city/check` - Check if a user has a city.
-- `POST /api/city/create` - Create a new city for the user.
-
-### Building Construction
-- Start, cancel, and destroy building constructions.
-- Automatically handle construction queuing and resource validation.
-
-#### Endpoints
-- `POST /api/buildingconstruction/start` - Start building construction.
-- `POST /api/buildingconstruction/cancel` - Cancel ongoing building construction.
-- `POST /api/buildingconstruction/destroy` - Destroy an existing building.
-
-### Unit Training
-- Manages unit training queue.
-
-#### Endpoints
-- `POST /api/unittraining/train` - Start training units.
-- `POST /api/unittraining/cancel` - Cancel ongoing unit training.
-- `POST /api/unittraining/kill` - Deletes selected units
-
-
-### Background Services
-- Periodic adds resources to cities based on building levels.
-- Handle construction and unit training completions.
+- Just use the swagger that is implemented
 
 ## Getting Started
 
