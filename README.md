@@ -1,5 +1,5 @@
 # Disclaimer
-This is a work in project, that may or may not be completed.
+This is a work in progress, that may or may not be completed.
 
 # Strategy Game Backend
 
